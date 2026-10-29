@@ -1,0 +1,471 @@
+[
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "Wet- & regelgeving",
+    "link": "wiki.html?page=wetEnRegelgeving",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
+    "label": "Kennisdeling sector",
+    "link": "wiki.html?page=kennisdelingSector",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "Green IT-beleid",
+    "link": "wiki.html?page=greenItBeleid",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "CO2-nulmeting",
+    "link": "wiki.html?page=co2Nulmeting",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "Duurzaam IT-inkopen",
+    "link": "wiki.html?page=duurzaamItInkopen",
+    "status": 1
+  },
+  {
+    "quadrant": 0,
+    "ring": 2,
+    "label": "Klimaatverklaring",
+    "link": "wiki.html?page=klimaatverklaring",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "Nieuwe Archiefwet",
+    "link": "wiki.html?page=nieuweArchiefwet",
+    "status": 1
+  },
+  {
+    "quadrant": 0,
+    "ring": 2,
+    "label": "Monitoring & meetmodel",
+    "link": "wiki.html?page=monitoringEnMeetmodel",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 2,
+    "label": "NCDD-manifest",
+    "link": "wiki.html?page=ncddManifest",
+    "status": 1
+  },
+  {
+    "quadrant": 0,
+    "ring": 2,
+    "label": "Twin transition",
+    "link": "wiki.html?page=twinTransition",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "MVO zonder IT",
+    "link": "wiki.html?page=mvoZonderIt",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 0,
+    "label": "Digitale opruimdag",
+    "link": "wiki.html?page=digitaleOpruimdag",
+    "status": 1
+  },
+  {
+    "quadrant": 1,
+    "ring": 0,
+    "label": "Mailbox opschonen",
+    "link": "wiki.html?page=mailboxOpschonen",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 1,
+    "label": "CO2-leefstijlcheck",
+    "link": "wiki.html?page=co2Leefstijlcheck",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 0,
+    "label": "Praatplaat CO2-impact",
+    "link": "wiki.html?page=praatplaatCo2Impact",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 1,
+    "label": "Datahygiënebeleid",
+    "link": "wiki.html?page=datahygienebeleid",
+    "status": 1
+  },
+  {
+    "quadrant": 1,
+    "ring": 1,
+    "label": "Bewustwordingscampagne",
+    "link": "wiki.html?page=bewustwordingscampagne",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 2,
+    "label": "Carbon literacy",
+    "link": "wiki.html?page=carbonLiteracy",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 1,
+    "label": "Informatieprofessional",
+    "link": "wiki.html?page=informatieprofessional",
+    "status": 1
+  },
+  {
+    "quadrant": 1,
+    "ring": 2,
+    "label": "Bewust AI-gebruik",
+    "link": "wiki.html?page=bewustAiGebruik",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 2,
+    "label": "Digitale detoxdag",
+    "link": "wiki.html?page=digitaleDetoxdag",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": "Bijlagen & bedankmails",
+    "link": "wiki.html?page=bijlagenEnBedankmails",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 0,
+    "label": "Selectielijsten",
+    "link": "wiki.html?page=selectielijsten",
+    "status": 1
+  },
+  {
+    "quadrant": 2,
+    "ring": 1,
+    "label": "Strenge selectie",
+    "link": "wiki.html?page=strengeSelectie",
+    "status": 1
+  },
+  {
+    "quadrant": 2,
+    "ring": 1,
+    "label": "Ontdubbelen",
+    "link": "wiki.html?page=ontdubbelen",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 1,
+    "label": "Dark data opruimen",
+    "link": "wiki.html?page=darkDataOpruimen",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 1,
+    "label": "Selectief digitaliseren",
+    "link": "wiki.html?page=selectiefDigitaliseren",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Goed is goed genoeg",
+    "link": "wiki.html?page=goedIsGoedGenoeg",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Niet alles online",
+    "link": "wiki.html?page=nietAllesOnline",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Ecologie in selectie",
+    "link": "wiki.html?page=ecologieInSelectie",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Herwaardering",
+    "link": "wiki.html?page=herwaardering",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Passende scanresolutie",
+    "link": "wiki.html?page=passendeScanresolutie",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Data Carbon Ladder",
+    "link": "wiki.html?page=dataCarbonLadder",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "DPC Carbon Toolkit",
+    "link": "wiki.html?page=dpcCarbonToolkit",
+    "status": 1
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
+    "label": "Duurzame webarchivering",
+    "link": "wiki.html?page=duurzameWebarchivering",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 3,
+    "label": "Alles bewaren",
+    "link": "wiki.html?page=allesBewaren",
+    "status": 1
+  },
+  {
+    "quadrant": 2,
+    "ring": 3,
+    "label": "Massadigitalisering",
+    "link": "wiki.html?page=massadigitalisering",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 0,
+    "label": "Groene stroom",
+    "link": "wiki.html?page=groeneStroom",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 0,
+    "label": "Verantwoord recyclen",
+    "link": "wiki.html?page=verantwoordRecyclen",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 1,
+    "label": "Levensduur verlengen",
+    "link": "wiki.html?page=levensduurVerlengen",
+    "status": 1
+  },
+  {
+    "quadrant": 3,
+    "ring": 1,
+    "label": "Refurbished hardware",
+    "link": "wiki.html?page=refurbishedHardware",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 1,
+    "label": "Groene cloud & hosting",
+    "link": "wiki.html?page=groeneCloudEnHosting",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 1,
+    "label": "Opslag inventariseren",
+    "link": "wiki.html?page=opslagInventariseren",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Back-upstrategie",
+    "link": "wiki.html?page=backupStrategie",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Hoge serverbenutting",
+    "link": "wiki.html?page=hogeServerbenutting",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Cold storage & tape",
+    "link": "wiki.html?page=coldStorageEnTape",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Apparatuur per persona",
+    "link": "wiki.html?page=apparatuurPerPersona",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Carbon-aware computing",
+    "link": "wiki.html?page=carbonAwareComputing",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Duurzame netwerken",
+    "link": "wiki.html?page=duurzameNetwerken",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 2,
+    "label": "Opslag in DNA & glas",
+    "link": "wiki.html?page=opslagInDnaEnGlas",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Grijze stroom",
+    "link": "wiki.html?page=grijzeStroom",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Vervangen op prijs",
+    "link": "wiki.html?page=vervangenOpPrijs",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Goedkope extra opslag",
+    "link": "wiki.html?page=goedkopeExtraOpslag",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Altijd-aan OTAP",
+    "link": "wiki.html?page=altijdAanOtap",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 0,
+    "label": "Website-CO2-check",
+    "link": "wiki.html?page=websiteCo2Check",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 0,
+    "label": "Lichte afbeeldingen",
+    "link": "wiki.html?page=lichteAfbeeldingen",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 1,
+    "label": "Duurzame erfgoedsite",
+    "link": "wiki.html?page=duurzameErfgoedsite",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 1,
+    "label": "Minder applicaties",
+    "link": "wiki.html?page=minderApplicaties",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 1,
+    "label": "Leveranciers bevragen",
+    "link": "wiki.html?page=leveranciersBevragen",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "AI-impact meewegen",
+    "link": "wiki.html?page=aiImpactMeewegen",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Groene software",
+    "link": "wiki.html?page=groeneSoftware",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Modulaire software",
+    "link": "wiki.html?page=modulaireSoftware",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Duurzame WP-plugins",
+    "link": "wiki.html?page=duurzameWpPlugins",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Verantwoorde AI-tools",
+    "link": "wiki.html?page=verantwoordeAiTools",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Groene AI-modellen",
+    "link": "wiki.html?page=groeneAiModellen",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 2,
+    "label": "Europese alternatieven",
+    "link": "wiki.html?page=europeseAlternatieven",
+    "status": 0
+  },
+  {
+    "quadrant": 4,
+    "ring": 3,
+    "label": "Autoplay-video's",
+    "link": "wiki.html?page=autoplayVideos",
+    "status": 0
+  }
+]

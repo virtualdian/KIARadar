@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Green IT-radar: praktijken voor duurzame digitalisering in de erfgoedsector, op basis van de KIA-groep Green IT.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+
+    <title>Green IT-radar</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+    <link rel="stylesheet" href="wiki.css">
+
+</head>
+
+<body>
+    <nav class="back-link"><a href="index.html">&larr; Terug naar de radar</a></nav>
+
+    <div id="wiki-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const wikiKey = params.get('page');
+
+            // alleen eenvoudige paginanamen toestaan, zodat er geen andere bestanden worden opgehaald
+            if (wikiKey && /^[A-Za-z0-9_-]+$/.test(wikiKey)) {
+                fetch(`wiki/${wikiKey}.md`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(markdown => {
+                        // Extract the first line of the markdown file
+                        const firstLine = markdown.split('\n')[0];
+                        // Remove '#' and the space, then set as the document's title
+                        const pageTitle = firstLine.replace('# ', '');
+                        document.title = pageTitle + ' | Green IT-radar';
+
+                        // Parse the markdown to HTML and display it
+                        const htmlContent = marked.parse(markdown);
+                        document.getElementById('wiki-container').innerHTML = htmlContent;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the markdown file:', error);
+                        document.getElementById('wiki-container').innerHTML = 'Wiki-item niet gevonden.';
+                    });
+            } else {
+                document.getElementById('wiki-container').innerHTML = 'Geen wiki-item opgegeven.';
+            }
+        });
+    </script>
+</body>
+
+</html>

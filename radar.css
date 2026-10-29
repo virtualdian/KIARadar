@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+:root {
+  /* kleuren van de KIA community (kiacommunity.nl) */
+  --kleur-achtergrond: white;
+  --kleur-tekst: black;
+  --kleur-raster: #d5d9de;
+  --kleur-link: #c21370;
+  --kleur-kop: #0e6804;
+  --kleur-doing: #0e6804;
+  --kleur-ongoing: #37a62d;
+  --kleur-planning: #2b7efe;
+  --kleur-undoing: #c21370;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 10px 16px 50px 16px;
+  background-color: var(--kleur-achtergrond);
+  color: var(--kleur-tekst);
+}
+
+h1 {
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+li {
+  margin: 20px 50px 0 0;
+}
+
+a {
+  color: var(--kleur-link);
+}
+
+h3 {
+  color: var(--kleur-kop);
+}
+
+.page-header {
+  border-bottom: 6px solid var(--kleur-kop);
+  margin: -10px -16px 20px -16px;
+  padding: 10px 16px 4px 16px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: -10px;
+  opacity: 0.85;
+}
+
+.center-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.column {
+  width: 640px;
+  max-width: 100%;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  li {
+    margin-right: 0;
+  }
+}

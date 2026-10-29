@@ -1,0 +1,154 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2017 Zalando SE
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Uitleg (versions/<versie>.json)
+"quadrant": 0,    - 0 t/m 4, met de klok mee vanaf linksboven:
+                    0 Bestuur & Governance, 1 Mens & Gedrag, 2 Collecties & Informatiebeheer,
+                    3 Infrastructuur & Hosting, 4 Digitale Diensten & Systemen
+"ring": 0,        - 0,1,2,3 (start vanuit de binnenste ring: DOING, ONGOING, PLANNING, UNDOING)
+"label": "",      - labelnaam (maximaal 23 tekens, anders wordt hij in de legenda afgekapt)
+"link": "",       - link naar de wikipagina, bijv. wiki.html?page=greenItBeleid (wiki/greenItBeleid.md)
+"status": 0       - onveranderd:0, nieuw:1, verplaatst:2
+-->
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Green IT-radar: praktijken voor duurzame digitalisering in de erfgoedsector, op basis van de KIA-groep Green IT.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+
+  <title>Green IT-radar</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="stylesheet" href="radar.css">
+
+</head>
+
+<body>
+
+  <div class="page-header">
+    <h1>Green IT-radar</h1>
+    <p class="subtitle">Duurzame digitalisering in de erfgoedsector, op basis van de KIA-groep Green IT</p>
+  </div>
+
+  <svg id="radar" style="display: block; margin: auto"></svg>
+
+  <div class="center-box">
+    <div class="column">
+      <h3>Wat is de Green IT-radar?</h3>
+      <p>
+        De Green IT-radar is een overzicht van praktijken rond duurzame digitalisering in de erfgoedsector, ondersteund
+        door een <em>ring assignment</em>. Elk punt is een onderwerp dat is samengesteld uit bijdragen in de
+        <a href="https://kiacommunity.nl/groups/44-green-it/welcome">KIA-groep Green IT</a>. De radar bestaat uit
+        vier ringen met de volgende karakteristieken:
+      </p>
+      <ul>
+        <li><strong style="color: var(--kleur-doing)">DOING</strong> &mdash; Gangbare, bewezen praktijk. Dit doet de
+          sector al en raden de bijdragen aan.</li>
+        <li><strong style="color: var(--kleur-ongoing)">ONGOING</strong> &mdash; Hier is de sector mee bezig en
+          <em>wil</em> ze overal doorvoeren.</li>
+        <li><strong style="color: var(--kleur-planning)">PLANNING</strong> &mdash; Dit wordt onderzocht of verkend en
+          <em>kan</em> interessant zijn.</li>
+        <li><strong style="color: var(--kleur-undoing)">UNDOING</strong> &mdash; Gewoonte waar de bijdragen van
+          afraden. Dit kan <em>écht</em> niet meer.</li>
+      </ul>
+      <h3>De vijf groepen</h3>
+      <ul>
+        <li><strong>Bestuur &amp; Governance</strong> &mdash; beleid, inkoop, sturing</li>
+        <li><strong>Mens &amp; Gedrag</strong> &mdash; bewustwording, digitaal werken, opschonen</li>
+        <li><strong>Collecties &amp; Informatiebeheer</strong> &mdash; selectie, bewaren, dark data, preservering</li>
+        <li><strong>Infrastructuur &amp; Hosting</strong> &mdash; cloud, opslag, hardware, energie</li>
+        <li><strong>Digitale Diensten &amp; Systemen</strong> &mdash; websites, applicaties, AI, leveranciers</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Hoe gebruik je deze radar?</h3>
+      <p>
+        Klik op een punt of een naam in de legenda voor een uitleg, de onderbouwing van de ring en links naar de
+        oorspronkelijke bijdragen. Zaken op de radar zijn geen verplichtingen: zie ze als gespreksonderwerpen om je
+        eigen IT en informatiebeheer tegen het licht te houden.
+      </p>
+      <h3>Wie bepaalt dit?</h3>
+      <p>
+        De indeling is gemaakt vanuit het perspectief van de erfgoedsector, op basis van wat de bijdragen in de
+        KIA-groep Green IT van het <a href="https://netwerkdigitaalerfgoed.nl/">Netwerk Digitaal Erfgoed</a> aanraden.
+        Staat iets verkeerd of mist er iets? Deel het in de
+        <a href="https://kiacommunity.nl/groups/44-green-it/welcome">KIA-groep Green IT</a>, dan nemen we het mee in
+        de volgende versie.
+      </p>
+      <p>
+        Vorige versies vind je hier: <a href="changelog.html">Changelog</a>
+      </p>
+      <p>
+        <em>Gebaseerd op: <a href="https://github.com/wigo4it/duurzaamheidsradar">Wigo4it Duurzaamheidsradar</a>,
+          <a href="https://www.thoughtworks.com/radar">ThoughtWorks</a> & <a
+            href="https://github.com/zalando/tech-radar">Zalando TechRadar</a></em>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="radar.js"></script>
+  <script>
+    // Load radar
+    function loadRadar() {
+      fetch("versions/versions.json")
+        .then(response => response.json())
+        .then(data => {
+          data.sort((a, b) => a.version < b.version ? 1 : -1);
+
+          // Get version from query params or use most recent
+          const searchParams = new URLSearchParams(window.location.search);
+          let versionString = searchParams.get('version');
+          if (!data.some(d => d.version === versionString)) {
+            versionString = data[0].version;
+          }
+
+          const versionData = data.find(d => d.version === versionString);
+
+          const config = {
+            title: versionData.title
+          };
+
+          fetch(`versions/${versionString}.json`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(entries => {
+              config.entries = entries;
+              radar_visualization(config);
+            })
+            .catch(error => {
+              console.error('Failed to load radar data:', error);
+            });
+        })
+        .catch(error => {
+          console.error('Failed to load versions.json:', error);
+        });
+    }
+
+    loadRadar();
+  </script>
+
+</body>
+
+</html>

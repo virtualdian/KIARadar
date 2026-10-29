@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green IT-radar | Changelog</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="stylesheet" href="radar.css">
+</head>
+<body>
+  <div>
+    <h1><a href="index.html" style="text-decoration: none">Green IT-radar</a></h1>
+  </div>
+  <div class="center-box">
+    <div id="changelog" class="column">
+      <h2>Changelog</h2>
+    </div>
+  </div>
+<script>
+  fetch('versions/versions.json')
+    .then(response => response.json())
+    .then(data => {
+      data.sort((a, b) => a.version < b.version ? 1 : -1);
+      const changelog = document.getElementById('changelog');
+      for (const d of data) {
+        const h = document.createElement('h3');
+        const a = document.createElement('a');
+        const url = d.version === data[0].version ? 'index.html' : `index.html?version=${d.version}`;
+        a.setAttribute('href', url);
+        a.append(document.createTextNode(d.title));
+        h.appendChild(a);
+        const p = document.createElement('p');
+        p.append(document.createTextNode(d.description));
+        changelog.appendChild(h);
+        changelog.appendChild(p);
+      }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.back-link {
+    margin: 20px auto 0 auto;
+    max-width: 760px;
+    font-size: 15px;
+}
+
+.back-link a {
+    color: #c21370;
+}
+
+#wiki-container {
+    padding: 10px 0;
+    color: black;
+    background-color: white;
+    margin: 20px auto 0 auto;
+    max-width: 760px;
+    overflow-wrap: break-word;
+}
+
+#wiki-container a {
+    color: #c21370;
+}
+
+#wiki-container a:hover {
+    color: #79104b;
+}
+
+#wiki-container h1 {
+    color: black;
+    border-bottom: 6px solid #0e6804;
+    padding-bottom: 8px;
+}
+
+#wiki-container h2,
+#wiki-container h3,
+#wiki-container h4,
+#wiki-container h5,
+#wiki-container h6 {
+    color: #0e6804;
+}
